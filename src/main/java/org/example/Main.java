@@ -3,7 +3,8 @@ package org.example;
 public class Main {
 
     public static void main(String[] args) {
-        Lightsaber lightsaber = new Lightsaber();
-        Robot robot_one = new Robot(lightsaber);
+        Weapon lightsaber = new Lightsaber();
+        Attacker robot_one = new Robot(lightsaber);
         robot_one.Attack();
+        Attacker dinosaur_one = new Dinosaur("Jack", 35);
 }}
