@@ -1,21 +1,20 @@
 package org.example;
 
-public class Robot {
+public class Robot implements Attacker{
 
     //Instance variables(HAS A)
     public String name;
-    public String weaponName;
-    public int attackPower;
+    public Weapon weapon;
 
     //Constructor
-    public Robot() {
+    public Robot(Weapon weapon) {
         this.name ="Brutus";
-        this.attackPower = 50;
-        this.weaponName = "Light Gun";
+        this.weapon = weapon;
+
+        }
 
     //Methods (CAN DO)
     public void Attack(){
-            System.out.println(this.name + "attack with their" + this.weaponName + "for" + this.attackPower + "danger!");
+            System.out.println(this.name + " attack with their " + this.weapon + " danger!");
         }
     }
-}
